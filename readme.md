@@ -27,6 +27,8 @@ If the component will have a *`state`*, it should be defined by a ***class***.
 > in `src/Counter.js`:
 
 ```js
+import React from 'react'
+
 const Counter = (props) => {
   let quantity = 0
   return (
@@ -102,7 +104,6 @@ It also has fewer symbols and takes less effort to type.
 
 Containers are components that contain business logic, doing more than just displaying something.
 We're not going to introduce a separate container component, but we're going to treat `index.js` as our container.
-This practice is far from ideal, but in the next exercise (shopping cart), we will observe React conventions more faithfully.
 
 Let's finally install redux in our project!
 
@@ -151,7 +152,7 @@ We are then passing information about the application's state from the store int
 ## Finalizing our Counter Component
 
 ```js
-import React, { Component } from 'react';
+import React, from 'react';
 
 const Counter = (props) =>{
     return (
