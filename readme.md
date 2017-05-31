@@ -13,7 +13,7 @@ If you don't use Atom, substitute the 4th command for your preferred text editor
 
 ## Building the Counter Component
 
-Our Counter component will not have a `state` in the like that we have seen so far.  and is just going to display a single value that it will receive as `props`. It will be purely a display component; these are sometimes referred to as dumb components or as functional components.
+Our Counter component will not have a `state` in the like that we have seen so far and is just going to display a single value that it will receive as `props`. It will be purely a display component; these are sometimes referred to as dumb components or functional components.
 
 We're going to convert counter from being a class component to a functional component.
 
@@ -27,8 +27,6 @@ If the component will have a *`state`*, it should be defined by a ***class***.
 > in `src/Counter.js`:
 
 ```js
-import React from 'react'
-
 const Counter = (props) => {
   let quantity = 0
   return (
@@ -56,7 +54,7 @@ An `action` in Redux is actually a description of a type of change, rather than 
 
 In this example we're going to use a number as the state. The reason for this is that our app is ridiculously simple so far.
 
-The extreme simplicity of this app allows us to see how redux operates on a basic level. When we build a shopping cart in the next exercise, we will use plain Javascript objects for our actions.
+The extreme simplicity of this app will allow us to see how redux operates on a basic level.
 
 ```bash
  $ mkdir src/reducers
@@ -96,7 +94,6 @@ if (action.type === "INCREMENT") {
 The switch statement ends up lining up better than its if-else counterpart, and is more uniform in its display.
 We don't have to specify the same value over and over again in `else if` statements.
 It also has fewer symbols and takes less effort to type.
-This seems like a win across the board, though they might feel strange at first if you aren't used to writing them.
 
 
 ## The Container
@@ -108,7 +105,7 @@ This practice is far from ideal, but in the next exercise (shopping cart), we wi
 Let's finally install redux in our project!
 
 ```bash
- $ npm install -S redux
+ $ npm install --save redux
 ```
 
 Then add the following to `index.js`
