@@ -9,7 +9,6 @@
  $ atom .
  $ npm start
 ```
-If you don't use Atom, substitute the 4th command for your preferred text editor. Take a minute to look over the project.
 
 ## Building the Counter Component
 
